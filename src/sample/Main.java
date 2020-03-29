@@ -17,33 +17,20 @@ public class Main extends Application {
     private final double windowHeight = 300;
     private final double windowWidth= 300;
 
-
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-        Stage window = stage;
+        Button knop = new Button("Klik Mij");
 
-        // Make a Text Object
-        Text text = new Text("Dit is een stukje text");
-
-        // Make a Button object and translate it
-        Button button = new Button("Click op me ik ben een knop");
-        button.setTranslateY(-30);
-
-        // Create StackPane layout and add to children
         StackPane layout = new StackPane();
-        layout.getChildren().addAll(text,button);
+        layout.getChildren().add(knop);
 
-        // Add layout to scene
         Scene scene = new Scene(layout,windowWidth,windowHeight);
-
-        // Configure window/stage and  show
-        window.setTitle(windowTitle);
-        window.setScene(scene);
-        window.show();
-
+        stage.setTitle(windowTitle);
+        stage.setScene(scene);
+        stage.show();
     }
 }
