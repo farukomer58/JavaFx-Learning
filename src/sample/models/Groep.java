@@ -2,6 +2,7 @@ package sample.models;
 
 public class Groep {
 
-    private int groepLeden;
-    private boolean isVol;
+    private String groepNaam;
+    private double groepLeden;
+    private boolean favoriet;
 }

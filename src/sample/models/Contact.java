@@ -4,9 +4,10 @@ import java.time.LocalDate;
 
 public class Contact {
 
-    private LocalDate datum;
-    private String bericht;
-    private double tekens;
-
+    private String contactNaam;
+    private String email;
+    private LocalDate geboortedatum;
+    private int telefoonNummer;
+    private String adres;
     private Groep groep;
 }
