@@ -24,6 +24,7 @@ public class AlertBox {
         window.setScene(scene);
         window.setTitle(title);
         window.setMinWidth(250);
+        window.initModality(Modality.APPLICATION_MODAL);
         window.showAndWait();
 
     }
