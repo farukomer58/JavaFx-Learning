@@ -23,14 +23,20 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Button knop = new Button("Klik Mij");
+
+        Button button1 = new Button("Click Me");
+        button1.setOnAction(e -> AlertBox.display("WARNING","YOU MADE A FAULT"));
 
         StackPane layout = new StackPane();
-        layout.getChildren().add(knop);
+        layout.getChildren().add(button1);
 
-        Scene scene = new Scene(layout,windowWidth,windowHeight);
+        Scene scene = new Scene(layout);
+
         stage.setTitle(windowTitle);
+        stage.setWidth(windowWidth);
+        stage.setHeight(windowHeight);
         stage.setScene(scene);
         stage.show();
+
     }
 }
